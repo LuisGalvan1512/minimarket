@@ -19,14 +19,13 @@ git clone https://github.com/LuisGalvan1512/minimarket
 
 cd minimarket
 
-# 2. Instalar dependencias
+# 2. Requisitos previos:
+Tener instalado Node.js (v16 o superior)
+
+- **Instalar dependencias**
 npm install
 
-# 3. Agregar configuración de Firebase
-# Reemplazar el archivo:
-# src/firebase/firebaseConfig.js
-
-# 4. Ejecutar en modo desarrollo
+# 3. Ejecutar en modo desarrollo
 npm run dev
 
 ## 🧩 Funcionalidades clave
