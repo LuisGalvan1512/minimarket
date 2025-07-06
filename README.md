@@ -1,4 +1,4 @@
-# 🛒 MiniMarket Virtual – Proyecto Web Profesional
+# 🛒 MiniMarket 
 
 Sistema completo de tienda virtual desarrollado con React y Firebase, simulando la experiencia de un minimarket físico. Incluye carrito de compras, roles de usuario, generación de boletas, devoluciones y panel administrativo con métricas visuales.
 
