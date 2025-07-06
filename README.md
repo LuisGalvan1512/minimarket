@@ -15,7 +15,7 @@ Sistema completo de tienda virtual desarrollado con React y Firebase, simulando 
 ## 📦 Instalación y ejecución
 
 # 1. Clonar el repositorio
-git clone https://github.com/usuario/minimarket.git
+git clone https://github.com/LuisGalvan1512/minimarket
 cd minimarket
 
 # 2. Instalar dependencias
