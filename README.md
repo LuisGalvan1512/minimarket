@@ -1,12 +1,80 @@
-# React + Vite
+# 🛒 MiniMarket Virtual – Proyecto Web Profesional
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sistema completo de tienda virtual desarrollado con React y Firebase, simulando la experiencia de un minimarket físico. Incluye carrito de compras, roles de usuario, generación de boletas, devoluciones y panel administrativo con métricas visuales.
 
-Currently, two official plugins are available:
+## ⚙️ Tecnologías principales
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React + Vite** – SPA rápida y moderna
+- **Firebase** – Autenticación y base de datos en tiempo real (Firestore)
+- **TailwindCSS** – Estilos responsivos y modernos
+- **Context API** – Manejo global de usuario y carrito
+- **React Router DOM** – Navegación por rutas
+- **Recharts** – Gráficas para panel administrativo
+- **React Icons** – Íconos de interfaz
 
-## Expanding the ESLint configuration
+## 📦 Instalación y ejecución
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 1. Clonar el repositorio
+git clone https://github.com/usuario/minimarket.git
+cd minimarket
+
+# 2. Instalar dependencias
+npm install
+
+# 3. Agregar configuración de Firebase
+# Reemplazar el archivo:
+# src/firebase/firebaseConfig.js
+
+# 4. Ejecutar en modo desarrollo
+npm run dev
+
+## 🧩 Funcionalidades clave
+
+- **🔐 Autenticación**: Registro e inicio de sesión con Firebase Auth
+- **👥 Roles de usuario**: 
+  - Invitado (solo navegación)
+  - Cliente (compra, historial, devoluciones)
+  - Admin (gestión completa)
+- **🛒 Carrito funcional**:
+  - Cantidad editable
+  - Total dinámico
+  - Persistencia entre sesiones
+- **🧾 Boletas**:
+  - Generación automática
+  - Historial guardado en Firestore
+- **📊 Panel Admin**:
+  - Productos más vendidos
+  - Boletas del día
+  - Gráfica de ventas
+  - Gestión de devoluciones con control de stock
+
+## 🌐 Rutas principales
+
+| Ruta           | Función                                                                 |
+|----------------|-------------------------------------------------------------------------|
+| `/`            | Inicio con banner promocional, categorías y ofertas                    |
+| `/tienda`      | Visualización de productos filtrados por categoría                      |
+| `/carrito`     | Resumen de compra y botón para finalizar pago                           |
+| `/cuenta`      | Perfil del usuario e historial de boletas                               |
+| `/devoluciones`| Lista de compras elegibles para devolución                              |
+| `/admin`       | Panel de métricas y gestión completa (requiere rol admin)               |
+
+## 👥 Flujo de usuario
+
+### 👋 Visitante
+- Navegar por catálogo de productos
+- Agregar items al carrito
+- Registrarse para finalizar compra
+
+### 🛒 Cliente registrado
+- Iniciar sesión con credenciales
+- Completar compra (genera boleta automática)
+- Ver historial de compras anteriores
+- Solicitar devoluciones de productos
+
+### 🔑 Administrador
+- Acceso exclusivo a `/admin`
+- CRUD completo de productos
+- Visualización de métricas en tiempo real
+- Aprobación/rechazo de devoluciones
+- Control de inventario automático
